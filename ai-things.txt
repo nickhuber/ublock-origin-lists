@@ -1,0 +1,33 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/nickhuber/ublock-origin-lists
+! License: https://github.com/nickhuber/ublock-origin-lists#license
+! Title: NicksAnnoyanceList-AI
+! Expires: 1 days
+! Version: 20250606
+# This tries to remove various mentions and uses of so-called "AI"
+||github.com/github-copilot/$xhr,1p
+github.com##button[data-testid="copilot-popover-button"]
+github.com##div.copilotPreview__container
+github.com##div.AppHeader-CopilotChat
+github.com##copilot-dashboard-entrypoint
+github.com##div:has(> div > button[data-testid="copilot-ask-menu"])
+github.com##react-partial[partial-name="copilot-code-chat"]
+github.com##li:has(> ul[aria-label="Copilot"])
+# copilot as a requested or suggested reviewer
+github.com##p:has(> span[data-hovercard-type="copilot"])
+# copilot comments on pull request
+github.com##a[href="/apps/copilot-pull-request-reviewer"]:upward(div.js-timeline-item)
+# inline copilot comments; this one kind of sucks because we don't see the copilot stuff until mouseover on resolved comments
+github.com##a.author:has-text("Copilot"):upward(tr.inline-comments)
+# copilot as a reviewer option
+github.com##label.select-menu-item:has-text("Copilot")
+
+portal.azure.com##a[aria-label="Copilot"]
+portal.azure.com##div.ext-gallery-solutionFinder-smallBanner
+bing.com##div#b_pole
+
+mail.google.com##[data-tooltip="Settings"]+div:has([aria-label="Ask Gemini"])
+mail.google.com##[data-tooltip="Settings"]+div:has([aria-label="Try Gemini"])
+mail.google.com##span[data-label="Summarize this email"]
+
+

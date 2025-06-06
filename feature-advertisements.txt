@@ -1,0 +1,9 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/nickhuber/ublock-origin-lists
+! License: https://github.com/nickhuber/ublock-origin-lists#license
+! Title: NicksAnnoyanceList-Advertisements
+! Expires: 1 days
+! Version: 20250606
+# This tries to remove annoying in-product feature adverts
+mail.google.com##div[aria-label="Inbox tip"]
+

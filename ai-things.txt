@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/nickhuber/ublock-origin-lists
-! License: https://github.com/nickhuber/ublock-origin-lists#license
+! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20250606
+! Version: 20250609
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -30,4 +30,6 @@ mail.google.com##[data-tooltip="Settings"]+div:has([aria-label="Ask Gemini"])
 mail.google.com##[data-tooltip="Settings"]+div:has([aria-label="Try Gemini"])
 mail.google.com##span[data-label="Summarize this email"]
 
+# Notion AI face icon
+notion.so##div.notion-assistant-corner-origin-container
 

@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/nickhuber/ublock-origin-lists
-! License: https://github.com/nickhuber/ublock-origin-lists#license
+! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-Advertisements
 ! Expires: 1 days
 ! Version: 20250606

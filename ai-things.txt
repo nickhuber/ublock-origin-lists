@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20250609
+! Version: 20250815
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -21,6 +21,8 @@ github.com##a[href="/apps/copilot-pull-request-reviewer"]:upward(div.js-timeline
 github.com##a.author:has-text("Copilot"):upward(tr.inline-comments)
 # copilot as a reviewer option
 github.com##label.select-menu-item:has-text("Copilot")
+# copilot in the main side navigation bar
+github.com##li.ActionListItem:has-text("Copilot")
 
 portal.azure.com##a[aria-label="Copilot"]
 portal.azure.com##div.ext-gallery-solutionFinder-smallBanner

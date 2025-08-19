@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20250815
+! Version: 20250819
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -17,7 +17,8 @@ github.com##li:has(> ul[aria-label="Copilot"])
 github.com##p:has(> span[data-hovercard-type="copilot"])
 # copilot comments on pull request
 github.com##a[href="/apps/copilot-pull-request-reviewer"]:upward(div.js-timeline-item)
-# inline copilot comments; this one kind of sucks because we don't see the copilot stuff until mouseover on resolved comments
+# inline copilot comments; this one kind of sucks because we don't see the
+# copilot stuff until mouseover on resolved comments
 github.com##a.author:has-text("Copilot"):upward(tr.inline-comments)
 # copilot as a reviewer option
 github.com##label.select-menu-item:has-text("Copilot")
@@ -33,10 +34,16 @@ mail.google.com##button[aria-label="Ask Gemini"]:upward(div)
 # email summarization suggestion
 mail.google.com##span[data-label="Summarize this email"]
 
-# This ends up targetting both a "search assist" under the seach bar and a "search assist" summary in the results
+# This ends up targetting both a "search assist" under the seach bar and a
+# "search assist" summary in the results
 duckduckgo.com## li:has-text("Search Assist")
 # This is for an item under the search bar
 duckduckgo.com## li:has-text("Duck.ai")
+
+# large icon that tries to open a chatbot in the sidebar. This kind of sucks
+# because there isn't a great label for what this is but it is the only button
+# component thing that uses an svg on this website it looks like.
+one.newrelic.com##div.nr1-shared-component-collaboration-panel-button:has(svg)
 
 # Notion AI face icon
 notion.so##div.notion-assistant-corner-origin-container

@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20250826
+! Version: 20250827
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -55,4 +55,9 @@ google.com##[data-mcpr]
 
 # Notion AI face icon
 notion.so##div.notion-assistant-corner-origin-container
+# "Ask AI" button in toolbar when selecting text
+notion.so##div[role="button"]:has-text("Ask AI")
+# "Improve writing" button in toolbar when selecting text
+notion.so##div[role="button"]:has-text("Improve writing")
+
 

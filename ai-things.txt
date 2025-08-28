@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20250827
+! Version: 20250828
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -52,6 +52,8 @@ one.newrelic.com##div.nr1-shared-component-collaboration-panel-button:has(svg)
 google.com##span:has-text("AI Mode"):upward(div[role="listitem"])
 # Remove AI summary results.
 google.com##[data-mcpr]
+# Gaudy "AI Mode" button on homepage search text input
+google.com##button:has-text("AI Mode")
 
 # Notion AI face icon
 notion.so##div.notion-assistant-corner-origin-container

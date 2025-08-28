@@ -13,13 +13,13 @@ systems while leaving the rest of the website in a working state.
 
 ## Advertising
 
-Maybe some companies like to think of this as showing a new feature or recent
-chagne but I see it as an advertisement like any other. The list
-[feature-advertisements.txt](feature-advertisements.txt) tries to remove all of
-these annoying notifications from applications. These are a little harder to
-find because sometimes they only show 1 time and sometimes you can't see them
-until you've been using the product for a while to have a new feature released
-that the company wants to promote.
+Maybe some companies like to think of this as showing a new feature, product or
+recent change but I see it as an advertisement like any other. The list
+[advertisements.txt](advertisements.txt) tries to remove all of these annoying
+notifications from applications. These are a little harder to find because
+sometimes they only show 1 time and sometimes you can't see them until you've
+been using the product for a while to have a new feature released that the
+company wants to promote.
 
 ## License
 

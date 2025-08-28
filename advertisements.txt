@@ -3,7 +3,10 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-Advertisements
 ! Expires: 1 days
-! Version: 20250606
-# This tries to remove annoying in-product feature adverts
-mail.google.com##div[aria-label="Inbox tip"]
+! Version: 20250828
+# This tries to remove advertisements I find offensive
 
+# Gmail advertising itself
+mail.google.com##div[aria-label="Inbox tip"]
+# Google homepage ad about their own stuff
+google.com##promo-middle-slot

@@ -24,6 +24,10 @@ github.com##a.author:has-text("Copilot"):upward(tr.inline-comments)
 github.com##label.select-menu-item:has-text("Copilot")
 # copilot in the main side navigation bar
 github.com##li.ActionListItem:has-text("Copilot")
+# "Code with agent mode" buton under "Development" sidebar in issue details.
+# This kind of looks silly if its the only button in that section but I'm not
+# sure if other things can live in there so it stays as an empty header
+github.com##button:has-text("Code with agent mode"):upward(div):upward(div)
 
 portal.azure.com##a[aria-label="Copilot"]
 portal.azure.com##div.ext-gallery-solutionFinder-smallBanner

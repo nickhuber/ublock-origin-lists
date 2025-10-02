@@ -77,3 +77,6 @@ emojipedia.org##h3:has-text("AI Emoji Generator Stickers"):upward(div):upward(di
 # Remove "Ask" chatbot at top right
 bamboohr.com##main > div#ask-hr-root
 
+# Remove "AI" section from nav bar
+launchdarkly.com##h3:has-text("AI"):upward(li)
+

@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251002
+! Version: 20251003
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -79,4 +79,7 @@ bamboohr.com##main > div#ask-hr-root
 
 # Remove "AI" section from nav bar
 launchdarkly.com##h3:has-text("AI"):upward(li)
+
+# Removing annoying button on task headers
+app.circleci.com##button:has-text("Explain this error")
 

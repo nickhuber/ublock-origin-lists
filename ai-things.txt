@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251007
+! Version: 20251014
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -85,4 +85,8 @@ app.circleci.com##button:has-text("Explain this error")
 
 # "Ask AI" button in Airwallex documentation
 airwallex.com##button:has-text("Ask AI")
+
+# Remove "AI" spam in job postings. This might break some actual job postings that have this text but there is really no loss for breaking those anyways.
+linkedin.com##div.job-details-module:has-text("AI-powered advice")
+linkedin.com##div.job-details-module:has-text("See curated AI tools for your job search")
 

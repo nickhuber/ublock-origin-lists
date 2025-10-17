@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251014
+! Version: 20251017
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -33,8 +33,8 @@ portal.azure.com##a[aria-label="Copilot"]
 portal.azure.com##div.ext-gallery-solutionFinder-smallBanner
 bing.com##div#b_pole
 
-# diamond icon in top right
-mail.google.com##button[aria-label="Ask Gemini"]:upward(div)
+# diamond "Aks Gemini" icon in top right
+mail.google.com##button[aria-label="Ask Gemini"]:upward(span):upward(div)
 # email summarization suggestion
 mail.google.com##span[data-label="Summarize this email"]
 

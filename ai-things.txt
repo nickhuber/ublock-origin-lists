@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251020
+! Version: 20251022
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -43,9 +43,11 @@ docs.google.com##div#docs-sidekick-button-container:has-text("Ask Gemini")
 
 # This ends up targetting both a "search assist" under the seach bar and a
 # "search assist" summary in the results
-duckduckgo.com## li:has-text("Search Assist")
+duckduckgo.com##li:has-text("Search Assist")
 # This is for an item under the search bar
-duckduckgo.com## li:has-text("Duck.ai")
+duckduckgo.com##li:has-text("Duck.ai")
+# Remove "Try asking Duck.AI, our private AI chat service:" when search finds nothing
+duckduckgo.com##textarea[name="aiChatPrompt"]:upward(div):upward(div)
 
 # large icon that tries to open a chatbot in the sidebar. This kind of sucks
 # because there isn't a great label for what this is but it is the only button

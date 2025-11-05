@@ -98,3 +98,6 @@ linkedin.com##div.job-details-module:has-text("See curated AI tools for your job
 
 # Remove LLM generated summary under the author's description
 youtube.com##div#expandable-metadata
+# These 2 rules remove some chat interface labeled "Ask and learn"
+youtube.com##div#teaser-carousel
+youtube.com##yt-video-description-youchat-section-view-model.ytVideoDescriptionYouchatSectionViewModelHost

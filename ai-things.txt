@@ -101,3 +101,5 @@ youtube.com##div#expandable-metadata
 # These 2 rules remove some chat interface labeled "Ask and learn"
 youtube.com##div#teaser-carousel
 youtube.com##yt-video-description-youchat-section-view-model.ytVideoDescriptionYouchatSectionViewModelHost
+# Remove "Ask" button next to upvote/downvote/share/download
+youtube.com##yt-button-view-model:has-text("Ask")

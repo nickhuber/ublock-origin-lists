@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251104
+! Version: 20251112
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -20,6 +20,8 @@ github.com##a[href="/apps/copilot-pull-request-reviewer"]:upward(div.js-timeline
 # inline copilot comments; this one kind of sucks because we don't see the
 # copilot stuff until mouseover on resolved comments
 github.com##a.author:has-text("Copilot"):upward(tr.inline-comments)
+# inline copilot comments on newer UI version
+github.com##td.diff-text-cell > div.d-flex:has(a[href="/apps/copilot-pull-request-reviewer"])
 # copilot as a reviewer option
 github.com##label.select-menu-item:has-text("Copilot")
 # copilot in the main side navigation bar

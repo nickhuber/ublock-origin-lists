@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251113
+! Version: 20251118
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -107,3 +107,7 @@ youtube.com##div#teaser-carousel
 youtube.com##yt-video-description-youchat-section-view-model.ytVideoDescriptionYouchatSectionViewModelHost
 # Remove "Ask" button next to upvote/downvote/share/download
 youtube.com##yt-button-view-model:has-text("Ask")
+
+# Remove "AI Assist" from left side navigation 
+stackoverflow.com##li.ps-relative > a#nav-askstack
+

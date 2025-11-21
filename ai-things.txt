@@ -44,7 +44,8 @@ mail.google.com##button[aria-label="Ask Gemini"]:upward(span):upward(div)
 # diamond "Try Gemini" icon in top right, not sure why this happens sometimes
 # instead but i see one on my work account and the other on my personal.
 mail.google.com##button[aria-label="Try Gemini"]:upward(span):upward(div)
-
+# remove "Flows" described as "agentic automation"
+mail.google.com##div[aria-label="Flows"]:upward(div)
 # email summarization suggestion
 mail.google.com##span[data-label="Summarize this email"]
 

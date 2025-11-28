@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251121
+! Version: 20251128
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -51,6 +51,8 @@ mail.google.com##span[data-label="Summarize this email"]
 
 # Top-right "Ask Gemini" button on things like google sheets
 docs.google.com##div#docs-sidekick-button-container:has-text("Ask Gemini")
+# Remove "Summarize this table" button on a spreadsheet
+docs.google.com##div.FormulaBarContainerGeminiSummarizeButton
 
 # This ends up targetting both a "search assist" under the seach bar and a
 # "search assist" summary in the results

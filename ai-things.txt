@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251201
+! Version: 20251203
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -63,6 +63,8 @@ duckduckgo.com##li:has-text("Search Assist")
 duckduckgo.com##li:has-text("Duck.ai")
 # Remove "Try asking Duck.AI, our private AI chat service:" when search finds nothing
 duckduckgo.com##textarea[name="aiChatPrompt"]:upward(div):upward(div)
+# Remove "Duck.ai" link above search bar on mobile
+duckduckgo.com##div#react-ai-button-slot
 
 # large icon that tries to open a chatbot in the sidebar. This kind of sucks
 # because there isn't a great label for what this is but it is the only button

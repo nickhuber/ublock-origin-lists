@@ -26,6 +26,8 @@ github.com##td.diff-text-cell > div.d-flex:has(a[href="/apps/copilot-pull-reques
 github.com##label.select-menu-item:has-text("Copilot")
 # copilot in the main side navigation bar
 github.com##li.ActionListItem:has-text("Copilot")
+# Remove "Copilot actions" when writing a pull request description
+github.com##div.ActionBar-item button#copilot-md-menu-anchor-pull_request_body
 # "Code with agent mode" buton under "Development" sidebar in issue details.
 # This kind of looks silly if its the only button in that section but I'm not
 # sure if other things can live in there so it stays as an empty header

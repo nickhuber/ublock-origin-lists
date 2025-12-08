@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251203
+! Version: 20251208
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -105,6 +105,8 @@ launchdarkly.com##h3:has-text("AI"):upward(li)
 
 # Removing annoying button on task headers
 app.circleci.com##button:has-text("Explain this error")
+# Remove "Chunk" from nav bar
+app.circleci.com##a[aria-label="Chunk"]
 
 # "Ask AI" button in Airwallex documentation
 airwallex.com##button:has-text("Ask AI")

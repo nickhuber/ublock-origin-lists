@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251208
+! Version: 20251209
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -50,6 +50,8 @@ mail.google.com##button[aria-label="Ask Gemini"]:upward(span):upward(div)
 mail.google.com##button[aria-label="Try Gemini"]:upward(span):upward(div)
 # remove "Flows" described as "agentic automation"
 mail.google.com##div[aria-label="Flows"]:upward(div)
+# remove "Studio" described as "Automate your work with AI agents"
+mail.google.com##div[aria-label="Studio"]:upward(div)
 # email summarization suggestion
 mail.google.com##span[data-label="Summarize this email"]
 

@@ -54,6 +54,8 @@ mail.google.com##div[aria-label="Flows"]:upward(div)
 mail.google.com##div[aria-label="Studio"]:upward(div)
 # email summarization suggestion
 mail.google.com##span[data-label="Summarize this email"]
+# Remove "help me write" button when composing an email
+mail.google.com##div[data-tooltip^="Help me write"]
 
 # Top-right "Ask Gemini" button on things like google sheets
 docs.google.com##div#docs-sidekick-button-container:has-text("Ask Gemini")

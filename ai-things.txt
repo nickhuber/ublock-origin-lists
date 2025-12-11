@@ -63,6 +63,8 @@ docs.google.com##div#docs-sidekick-button-container:has-text("Ask Gemini")
 docs.google.com##div.FormulaBarContainerGeminiSummarizeButton
 # Remove floating "Analyze this data" button on google sheets pages
 docs.google.com##div.waffleGriddySuggestionsBubbleContainer:has-text("Analyze this data")
+# Remove "Gemini" menu item
+docs.google.com##div#docs-gemini-menu
 
 # This ends up targetting both a "search assist" under the seach bar and a
 # "search assist" summary in the results

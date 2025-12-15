@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251210
+! Version: 20251215
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -101,6 +101,8 @@ notion.so##a[href="/ai"]
 sentry.io##section#seer
 # Remove "Prevent" which is an "AI" code review system
 sentry.io##div[data-sentry-element="Component"]:has-text("Prevent")
+# Remove "Ask AI to build your query" on search inputs
+sentry.io##div[data-sentry-element="AskSeerPane"]
 
 # "AI" sticker generator widget on many pages
 emojipedia.org##h3:has-text("AI Emoji Generator Stickers"):upward(div):upward(div)

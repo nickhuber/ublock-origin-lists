@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20251229
+! Version: 20260105
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -137,4 +137,7 @@ youtube.com##yt-button-view-model:has-text("Ask")
 
 # Remove "AI Assist" from left side navigation 
 stackoverflow.com##li.ps-relative > a#nav-askstack
+
+# Remove "Amazon Q" LLM chat on AWS dashboard
+amazon.com##button[aria-label="Amazon Q"]
 

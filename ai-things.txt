@@ -86,6 +86,8 @@ duckduckgo.com##div#react-ai-button-slot
 # because there isn't a great label for what this is but it is the only button
 # component thing that uses an svg on this website it looks like.
 one.newrelic.com##div.nr1-shared-component-collaboration-panel-button:has(svg)
+# Remove "AI summary" on alerts
+one.newrelic.com##div.wnd-CardBase:has-text("AI summary")
 
 # Remove "AI Mode" search type
 google.com##span:has-text("AI Mode"):upward(div[role="listitem"])

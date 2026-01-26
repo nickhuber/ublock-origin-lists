@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20260119
+! Version: 20260126
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -44,6 +44,8 @@ github.com##a[href="/apps/copilot-pull-request-reviewer"]:upward(div[class^="Rev
 github.com##svg.octicon-copilot:upward(a[class^="prc-Button-ButtonBase"])
 # Remove copilot agent button in top navigation
 github.com##button#global-copilot-agent-button
+# Remove copilot from the list of participants on a pull request
+github.com##a.participant-avatar[href="/apps/copilot-swe-agent"]
 
 portal.azure.com##a[aria-label="Copilot"]
 portal.azure.com##div.ext-gallery-solutionFinder-smallBanner

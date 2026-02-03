@@ -46,6 +46,8 @@ github.com##svg.octicon-copilot:upward(a[class^="prc-Button-ButtonBase"])
 github.com##button#global-copilot-agent-button
 # Remove copilot from the list of participants on a pull request
 github.com##a.participant-avatar[href="/apps/copilot-swe-agent"]
+# Remove "Agents" tab in top navigation
+github.com##li[class^="prc-UnderlineNav-UnderlineNavItem-"]:has-text("Agents")
 
 portal.azure.com##a[aria-label="Copilot"]
 portal.azure.com##div.ext-gallery-solutionFinder-smallBanner

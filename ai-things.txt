@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20260126
+! Version: 20260203
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -153,3 +153,6 @@ stackoverflow.com##li.ps-relative > a#nav-askstack
 # Remove "Amazon Q" LLM chat on AWS dashboard
 amazon.com##button[aria-label="Amazon Q"]
 
+# I don't know who "Devin" is or why I would want to ask him about things on
+# this wiki but it takes up a large portion of the bottom of the screen
+deepwiki.com##div.bottom-2:has-text("Ask Devin about")

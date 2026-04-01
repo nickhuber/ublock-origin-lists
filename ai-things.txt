@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20260224
+! Version: 20260401
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -75,6 +75,9 @@ docs.google.com##div.FormulaBarContainerGeminiSummarizeButton
 docs.google.com##div.waffleGriddySuggestionsBubbleContainer:has-text("Analyze this data")
 # Remove "Gemini" menu item
 docs.google.com##div#docs-gemini-menu
+
+# Remove "AI support assistant" from google support pages
+support.google.com##div.helpPanelContainerRoot
 
 # This ends up targetting both a "search assist" under the seach bar and a
 # "search assist" summary in the results

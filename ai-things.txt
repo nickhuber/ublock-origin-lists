@@ -3,7 +3,7 @@
 ! License: https://github.com/nickhuber/ublock-origin-lists/blob/main/README.md#license
 ! Title: NicksAnnoyanceList-AI
 ! Expires: 1 days
-! Version: 20260622
+! Version: 20260713
 # This tries to remove various mentions and uses of so-called "AI"
 ||github.com/github-copilot/$xhr,1p
 github.com##button[data-testid="copilot-popover-button"]
@@ -176,7 +176,8 @@ atlassian.net##button[data-testid="editor-toolbar__ask-rovo"]
 atlassian.net##button[data-testid="ai-agents-button.button"]:upward(div)
 # Remove "Improve task" button in top right of task dispaly
 atlassian.net##div[data-testid="issue.views.issue-base.foundation.status.improve-issue"]
-
+# Remove "rovo" button in the bottom right
+atlassian.net##div[data-spotlight-target="rovo-ai-button"]
 
 # Remove some "AI" sparkly button above action menu
 miro.com##div[data-testid="CreationBarTopButtons"]
